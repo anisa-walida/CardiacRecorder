@@ -7,8 +7,8 @@
     tools:context=".Login">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="358dp"
-        android:layout_height="628dp"
+        android:layout_width="427dp"
+        android:layout_height="612dp"
         android:layout_gravity="center"
         android:layout_margin="50dp"
         android:layout_marginLeft="5dp"
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="30dp"
-                android:hint="Userame"
+                android:hint="Username"
 
                 android:padding="15dp"
                 android:paddingLeft="15dp"
@@ -62,10 +62,9 @@
                 android:textColorHighlight="@color/cardview_dark_background" />
 
 
-
             <Button
                 android:id="@+id/button3"
-                android:layout_width="match_parent"
+                android:layout_width="296dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="#69F0CA"

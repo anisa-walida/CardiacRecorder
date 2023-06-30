@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Insert_Medical_Report">
+    tools:context=".Update_Medical_report">
 
     <androidx.cardview.widget.CardView
         android:layout_width="324dp"
@@ -23,13 +23,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/ebutton"
             android:layout_width="149dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="490dp"
             android:backgroundTint="#4DB6B6"
-            android:text="Save"
+            android:text="update"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -41,7 +41,7 @@
             app:layout_constraintVertical_bias="0.846" />
 
         <EditText
-            android:id="@+id/nill"
+            android:id="@+id/nille"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -61,7 +61,7 @@
             tools:textColorHint="@color/black" />
 
         <EditText
-            android:id="@+id/gastric"
+            android:id="@+id/gastrice"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -80,7 +80,7 @@
             app:layout_constraintVertical_bias="0.278" />
 
         <EditText
-            android:id="@+id/glucose"
+            android:id="@+id/glucosee"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -100,7 +100,7 @@
             tools:textColorHint="@color/black" />
 
         <EditText
-            android:id="@+id/sugar"
+            android:id="@+id/sugare"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -120,7 +120,7 @@
             tools:textColorHint="@color/black" />
 
         <EditText
-            android:id="@+id/sodium"
+            android:id="@+id/sodiume"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -139,14 +139,14 @@
             app:layout_constraintVertical_bias="0.188" />
 
         <EditText
-            android:id="@+id/urin"
+            android:id="@+id/urine"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="355dp"
 
             android:ems="10"
-            android:hint="Heart Rate"
+            android:hint="Heart Ratee"
             android:inputType="textPersonName"
             android:padding="15dp"
             android:textColorHint="@color/black"
@@ -159,14 +159,14 @@
             tools:textColorHint="@color/black" />
 
         <EditText
-            android:id="@+id/henlo"
+            android:id="@+id/henloe"
             android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="420dp"
 
             android:ems="10"
-            android:hint="Comment"
+            android:hint="Commente"
             android:inputType="textPersonName"
             android:padding="15dp"
             android:textColorHint="@color/black"
@@ -178,7 +178,7 @@
             app:layout_constraintVertical_bias="0.188" />
 
         <Button
-            android:id="@+id/next"
+            android:id="@+id/nexte"
             android:layout_width="149dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
@@ -196,7 +196,7 @@
             app:layout_constraintVertical_bias="0.846" />
 
         <Button
-            android:id="@+id/logout_button"
+            android:id="@+id/logout_buttone"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
