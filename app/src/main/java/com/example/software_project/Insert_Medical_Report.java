@@ -53,8 +53,8 @@ public class Insert_Medical_Report extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent intent = new Intent(Insert_Medical_Report.this, MedicalTestReportView.class);
-               startActivity(intent);
+                Intent intent = new Intent(Insert_Medical_Report.this, MedicalTestReportView.class);
+                startActivity(intent);
             }
         });
     }

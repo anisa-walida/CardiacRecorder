@@ -74,7 +74,7 @@ public class Login extends AppCompatActivity {
         });
     }
 
-   private void signIn(String email, String password) {
+    private void signIn(String email, String password) {
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -88,8 +88,6 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
-
 
     public Boolean validateUsername() {
         String val = loginUsername.getText().toString();
