@@ -32,16 +32,16 @@ public class Insert_Medical_Report extends AppCompatActivity {
         comment=findViewById(R.id.henlo);
         b1=findViewById(R.id.button);
         b2=findViewById(R.id.next);
-        logout = findViewById(R.id.logout_button);
+//        logout = findViewById(R.id.logout_button);
 
         databaseReference= FirebaseDatabase.getInstance().getReference().child("MedicalReport");
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(Insert_Medical_Report.this, Login.class));
-            }
-        });
+//        logout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                FirebaseAuth.getInstance().signOut();
+//                startActivity(new Intent(Insert_Medical_Report.this, Login.class));
+//            }
+//        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
 
