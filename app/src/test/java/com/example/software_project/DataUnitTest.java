@@ -61,6 +61,7 @@ public class DataUnitTest {
         assertFalse(dataList.getData().contains(data2));
     }
 
+
     /**
      * testing addData method for exceptions
      */
@@ -88,4 +89,5 @@ public class DataUnitTest {
 
         assertThrows(IllegalArgumentException.class, () -> dataList.deleteData(data1));
     }
+
 }

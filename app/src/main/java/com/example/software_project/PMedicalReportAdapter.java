@@ -121,7 +121,7 @@ public class PMedicalReportAdapter extends RecyclerView.Adapter<PMedicalReportAd
             holder.sys.setTextColor(Color.rgb(255, 0,0));
         }
 
-        if(Integer.parseInt(medicalReportModel.getSystolic()) > 90 || Integer.parseInt(medicalReportModel.getSystolic()) < 60){
+        if(Integer.parseInt(medicalReportModel.getDiastolic()) > 90 || Integer.parseInt(medicalReportModel.getDiastolic()) < 60){
             holder.dys.setTextColor(Color.rgb(255, 0,0));
         }
 

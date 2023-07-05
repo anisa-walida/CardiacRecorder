@@ -25,7 +25,7 @@ public class MedicalTestReportView extends AppCompatActivity {
     DatabaseReference database;
     PMedicalReportAdapter adapter;
 
-    FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    FirebaseAuth mAuth ;
     ArrayList<MedicalReportModel> list = new ArrayList<>();
 
     //My edit
@@ -42,6 +42,8 @@ public class MedicalTestReportView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medical_test_report_view);
+
+        mAuth = FirebaseAuth.getInstance();
         try {
             database = FirebaseDatabase.getInstance().getReference("MedicalReport").child(mAuth.getCurrentUser().getUid());
             //  .child(Globals.sharedPreferences.getString("username", "user"));
