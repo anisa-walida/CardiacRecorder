@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,24 +67,20 @@ public class PMedicalReportAdapter extends RecyclerView.Adapter<PMedicalReportAd
 
     //My edit*/
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView s, g, n,glu,so,u;
-        Button editButton;
-        Button deleteButton;
+        TextView name, sys, dys, hr, date_time;
+        Button editButton, deleteButton;
+
         public MyViewHolder(@NonNull View itemView, DeleteButtonClickListener deleteButtonClickListener) {
             super(itemView);
-            s = itemView.findViewById(R.id.sugarView);
-            g = itemView.findViewById(R.id.gasView);
-            n = itemView.findViewById(R.id.nillView);
-            so = itemView.findViewById(R.id.sodiumView);
-            u = itemView.findViewById(R.id.acidView);
-            glu = itemView.findViewById(R.id.glucoseView);
+            name = itemView.findViewById(R.id.name_view);
+            sys = itemView.findViewById(R.id.systolic_pressure_view);
+            dys = itemView.findViewById(R.id.diastolic_pressure_view);
+            hr = itemView.findViewById(R.id.heart_rate_view);
+            date_time = itemView.findViewById(R.id.date_time_view);
+            editButton = itemView.findViewById(R.id.edit_button);
+            deleteButton = itemView.findViewById(R.id.delete_button);
 
-            //*My edit
-            editButton=itemView.findViewById(R.id.buttone);
-            //My edit*/
 
-            //My delete
-            deleteButton = itemView.findViewById(R.id.buttond);
             deleteButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -105,20 +103,27 @@ public class PMedicalReportAdapter extends RecyclerView.Adapter<PMedicalReportAd
     @NonNull
     @Override
     public PMedicalReportAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v= LayoutInflater.from(context).inflate(R.layout.p_medical_report_card,parent,false);
+        View v= LayoutInflater.from(context).inflate(R.layout.medical_report_card,parent,false);
         return new MyViewHolder(v,deleteButtonClickListener);
     }
 
+    @SuppressLint("RecyclerView")
     @Override
     public void onBindViewHolder(@NonNull PMedicalReportAdapter.MyViewHolder holder, int position) {
         MedicalReportModel medicalReportModel = allReports.get(position);
-        holder.s.setText(medicalReportModel.getDate());
-        holder.g.setText(medicalReportModel.getTime());
-        holder.n.setText(medicalReportModel.getSystolic());
-        holder.so.setText(medicalReportModel.getDiastolic());
-        holder.u.setText(medicalReportModel.getHeartRate());
-        holder.glu.setText(medicalReportModel.getComment());
+        holder.name.setText(medicalReportModel.getName());
+        holder.sys.setText(medicalReportModel.getSystolic());
+        holder.dys.setText(medicalReportModel.getDiastolic());
+        holder.hr.setText(medicalReportModel.getHeartRate());
+        holder.date_time.setText(medicalReportModel.getDate() + " - " + medicalReportModel.getTime());
 
+        if(Integer.parseInt(medicalReportModel.getSystolic()) > 140 || Integer.parseInt(medicalReportModel.getSystolic()) < 90){
+            holder.sys.setTextColor(Color.rgb(255, 0,0));
+        }
+
+        if(Integer.parseInt(medicalReportModel.getSystolic()) > 90 || Integer.parseInt(medicalReportModel.getSystolic()) < 60){
+            holder.dys.setTextColor(Color.rgb(255, 0,0));
+        }
 
 
         //*My edit 88
