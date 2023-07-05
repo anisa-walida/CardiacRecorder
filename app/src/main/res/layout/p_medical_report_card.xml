@@ -2,7 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recycler"
+    >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,7 +120,7 @@
 
                     android:gravity="center"
                     android:padding="3dp"
-                    android:text="Gastolic"
+                    android:text="Diastolic"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -244,7 +246,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="354dp"
+                android:layout_width="355dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_marginTop="30dp"

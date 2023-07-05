@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Insert_Medical_Report">
+    tools:context=".Insert_Medical_Report"
+    android:id="@+id/insert">
 
     <androidx.cardview.widget.CardView
         android:layout_width="324dp"
