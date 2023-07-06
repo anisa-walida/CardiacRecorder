@@ -6,10 +6,16 @@ With an intuitive interface and a range of features, 'CardiacRecorder' is the pe
 Below are some screenshots of the app:
 <table>
 <tr>
- <td> <img src="https://github.com/anisa-walida/CardiacRecorder/assets/127889786/f917bf32-cf29-4f44-9ddc-e1e328b8ba5f" alt="Image 1" style="width:50px;height:50px;"> </td>
- <td> <img src="https://github.com/anisa-walida/CardiacRecorder/assets/127889786/56aedbfb-503a-4558-abde-df5d9af92340" alt="Image 2" style="width:50px;height:50px;"> </td>
+ <td> <img src="https://github.com/anisa-walida/CardiacRecorder/blob/1cb6c081c13449d64642112c08d2a12aa8b96f5a/MainActivity.jpeg" alt="Image 1" style="width:200px;height:500px;"> </td>
+ <td> <img src="https://github.com/anisa-walida/CardiacRecorder/blob/1cb6c081c13449d64642112c08d2a12aa8b96f5a/SignUp.jpeg" alt="Image 2" style="width:200px;height:500px;"> </td>
+  <td> <img src="https://github.com/anisa-walida/CardiacRecorder/blob/1cb6c081c13449d64642112c08d2a12aa8b96f5a/Login.jpeg" alt="Image 2" style="width:200px;height:500px;"> </td>
+
+  
+ 
 </tr>
 <tr>
-<td>Nishat Tasnim Mahi</td>
-<td>Anisa Walida</td>
+  <td> <img src="https://github.com/anisa-walida/CardiacRecorder/blob/1cb6c081c13449d64642112c08d2a12aa8b96f5a/Insert_page.jpeg" alt="Image 2" style="width:200px;height:500px;"> </td>
+  <td> <img src="https://github.com/anisa-walida/CardiacRecorder/blob/1cb6c081c13449d64642112c08d2a12aa8b96f5a/View_page.jpeg" alt="Image 2" style="width:200px;height:500px;"> </td>
+  <td> <img src="https://github.com/anisa-walida/CardiacRecorder/blob/1cb6c081c13449d64642112c08d2a12aa8b96f5a/Update_page.jpeg" alt="Image 2" style="width:200px;height:500px;"> </td>
 </tr>
+</table>
