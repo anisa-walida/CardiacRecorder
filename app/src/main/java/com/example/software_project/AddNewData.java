@@ -53,11 +53,18 @@ public class AddNewData {
             throw new IllegalArgumentException();
         }
     }
+<<<<<<< HEAD
 //    public void edit(int pos, MedicalReportModel data)
 //    {
 //        records.set(pos,data);
 //    }
 
+=======
+    public void edit(int pos, MedicalReportModel data)
+    {
+        records.set(pos,data);
+    }
+>>>>>>> e230d85d0656b7dfa71c465d8ed2bc641e0c066d
     /**
      * this method returns the size of list
      * @return int

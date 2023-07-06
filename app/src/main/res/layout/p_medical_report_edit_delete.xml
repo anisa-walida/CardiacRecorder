@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Update_Medical_report">
+    tools:context=".Update_Medical_report"
+    android:id="@+id/update">
 
     <androidx.cardview.widget.CardView
         android:layout_width="324dp"
@@ -146,7 +147,7 @@
             android:layout_marginTop="355dp"
 
             android:ems="10"
-            android:hint="Heart Ratee"
+            android:hint="Heart Rate"
             android:inputType="textPersonName"
             android:padding="15dp"
             android:textColorHint="@color/black"
@@ -166,7 +167,7 @@
             android:layout_marginTop="420dp"
 
             android:ems="10"
-            android:hint="Commente"
+            android:hint="Comment"
             android:inputType="textPersonName"
             android:padding="15dp"
             android:textColorHint="@color/black"
