@@ -8,6 +8,7 @@ public class MedicalReportModel {
     String Diastolic;
     String HeartRate;
     String Comment;
+    public MedicalReportModel(){}
 
     public MedicalReportModel(String name, String date, String time, String systolic,String diastolic,String heartRate,String comment) {
         Name = name;

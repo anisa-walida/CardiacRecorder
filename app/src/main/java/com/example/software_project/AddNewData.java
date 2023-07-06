@@ -53,6 +53,10 @@ public class AddNewData {
             throw new IllegalArgumentException();
         }
     }
+//    public void edit(int pos, MedicalReportModel data)
+//    {
+//        records.set(pos,data);
+//    }
 
     /**
      * this method returns the size of list
