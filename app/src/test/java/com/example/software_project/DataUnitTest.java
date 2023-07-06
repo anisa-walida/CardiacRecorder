@@ -90,4 +90,8 @@ public class DataUnitTest {
         assertThrows(IllegalArgumentException.class, () -> dataList.deleteData(data1));
     }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> e230d85d0656b7dfa71c465d8ed2bc641e0c066d
 }

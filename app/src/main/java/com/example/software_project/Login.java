@@ -32,6 +32,13 @@ public class Login extends AppCompatActivity {
     TextView signupRedirectText;
     FirebaseAuth mAuth;
 
+    /**
+     * OnCreate method is created
+     * @param savedInstanceState If the activity is being re-initialized after
+     *     previously being shut down then this Bundle contains the data it most
+     *     recently supplied in {@link #onSaveInstanceState}.  <b><i>Note: Otherwise it is null.</i></b>
+     *
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +81,11 @@ public class Login extends AppCompatActivity {
         });
     }
 
+    /**
+     * use for checking authentication
+     * @param email
+     * @param password
+     */
     private void signIn(String email, String password) {
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -111,6 +123,9 @@ public class Login extends AppCompatActivity {
         }
     }
 
+    /**
+     * use for checking user
+     */
     public void checkUser() {
         String userUsername = loginUsername.getText().toString().trim();
         String userPassword = loginPassword.getText().toString().trim();

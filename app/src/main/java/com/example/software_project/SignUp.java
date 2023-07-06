@@ -26,6 +26,13 @@ public class SignUp extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference reference;
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+    /**
+     * Use for create an account
+     * @param email
+     * @param password
+     * @param context
+     */
     private void createAccount(String email, String password, SignUp context){
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
