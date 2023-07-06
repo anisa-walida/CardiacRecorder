@@ -61,3 +61,6 @@ Below are some screenshots of the app:
   <td> <img src="https://github.com/anisa-walida/CardiacRecorder/blob/1cb6c081c13449d64642112c08d2a12aa8b96f5a/Update_page.jpeg" alt="Image 2" style="width:200px;height:500px;"> </td>
 </tr>
 </table>
+
+<h2>StoryBoarding</h2>
+<img src="https://github.com/anisa-walida/CardiacRecorder/blob/7ee170942489b727cf9748613ee08639829c7ca8/Mockupf.png">
